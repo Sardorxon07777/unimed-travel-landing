@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZAP-X bepul konsultatsiya — UniMed Travel</title>
+<meta name="description" content="4-noyabr kuni UniMed Travel Telegram kanalida Apollo Hospitals neyrojarrohi Dr. Gaurav Tyagi bilan ZAP-X texnologiyasi bo'yicha bepul jonli onlayn konsultatsiya.">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+/* TODO: PIXEL_ID o'rniga Facebook Business Manager'dagi haqiqiy Pixel ID'ni qo'ying */
+fbq('init', 'PIXEL_ID');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+  :root{
+    --bg:#F2F6F9; --surface:#FFFFFF; --fg:#0E2233; --muted:#51697A;
+    --primary:#0A4F94; --primary-dark:#06335F; --accent:#019E83; --accent-dark:#018470;
+    --warn-bg:#FFF4E0; --warn-border:#F0CE8A; --warn-fg:#6B4A12;
+    --border:#DCE5EC;
+    --font-display:'Fraunces',Georgia,serif;
+    --font-body:'IBM Plex Sans',-apple-system,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg);color:var(--fg);font-family:var(--font-body);line-height:1.55;-webkit-font-smoothing:antialiased}
+  img{max-width:100%}
+  .wrap{max-width:1040px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+  h1,h2,h3{font-family:var(--font-display);font-weight:600;margin:0;text-wrap:balance}
+  p{margin:0}
+  a{color:inherit}
+
+  .topbar{padding-block:14px;border-bottom:1px solid var(--border);background:var(--surface)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:600;font-size:19px;color:var(--primary-dark)}
+  .brand .mark{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;flex:none}
+  .topcta{font-size:14px;font-weight:600;padding:10px 16px;border-radius:999px;background:var(--primary);color:#fff;text-decoration:none;white-space:nowrap}
+
+  .hero{padding-block:48px 44px}
+  .herogrid{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:start}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--primary);background:rgba(10,79,148,.08);padding:7px 14px;border-radius:999px;margin-bottom:18px}
+  .hero h1{font-size:clamp(28px,4vw,42px);line-height:1.12;color:var(--primary-dark)}
+  .hero .sub{margin-top:16px;font-size:16.5px;color:var(--muted);max-width:52ch}
+  .hero .ctarow{margin-top:26px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .btn-primary{
+    display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#fff;
+    font-weight:700;font-size:16px;padding:15px 25px;border-radius:12px;text-decoration:none;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .btn-primary:hover{background:var(--accent-dark);transform:translateY(-1px)}
+  .trustline{font-size:13px;color:var(--muted)}
+
+  .special{margin-top:24px;background:var(--warn-bg);border:1px solid var(--warn-border);border-radius:14px;padding:18px 20px}
+  .special .tag{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--warn-fg);margin-bottom:6px;display:block}
+  .special p{font-size:14.5px;color:var(--warn-fg)}
+
+  .doctorcard{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:20px;text-align:center}
+  .doctorcard img{width:100%;max-width:200px;border-radius:14px;margin:0 auto 14px;display:block;object-fit:cover;aspect-ratio:1/1.1}
+  .doctorcard .name{font-family:var(--font-display);font-size:18px;color:var(--primary-dark)}
+  .doctorcard .role{font-size:13px;color:var(--muted);margin-top:4px}
+  .doctorcard .eventline{margin-top:14px;padding-top:14px;border-top:1px solid var(--border);font-size:13px;font-weight:600;color:var(--primary)}
+
+  section{padding-block:46px}
+  .section-head{max-width:50ch;margin-bottom:26px}
+  .section-head .kicker{font-size:12.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--accent-dark);margin-bottom:10px;display:block}
+  .section-head h2{font-size:clamp(21px,3vw,28px);color:var(--primary-dark)}
+
+  .docs{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+  .doclist{display:grid;gap:12px;counter-reset:doc}
+  .docitem{counter-increment:doc;display:flex;gap:16px;align-items:flex-start;background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:16px 18px}
+  .docitem::before{content:counter(doc);flex:none;width:28px;height:28px;border-radius:8px;background:var(--primary);color:#fff;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;font-family:var(--font-body)}
+  .docitem h3{font-size:15.5px;color:var(--primary-dark);margin-bottom:3px}
+  .docitem p{font-size:13.5px;color:var(--muted)}
+  .docnote{margin-top:20px;font-size:13.5px;color:var(--muted)}
+  .docnote a{color:var(--primary);font-weight:600;text-decoration:underline}
+
+  .closing{background:var(--primary);color:#fff;border-radius:24px;margin-inline:max(20px,env(safe-area-inset-left,0px)) max(20px,env(safe-area-inset-right,0px));padding:42px 28px;text-align:center}
+  .closing .eyebrow{background:rgba(255,255,255,.14);color:#fff}
+  .closing h2{color:#fff;font-size:clamp(21px,3.2vw,30px);max-width:28ch;margin-inline:auto}
+  .closing p{color:rgba(255,255,255,.78);margin-top:12px;max-width:44ch;margin-inline:auto}
+  .closing .btn-primary{margin-top:24px;background:#fff;color:var(--primary-dark)}
+  .closing .btn-primary:hover{background:#EAF2FF}
+
+  footer{padding-block:28px;border-top:1px solid var(--border)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+
+  @media (max-width:760px){
+    .herogrid{grid-template-columns:1fr}
+    .doctorcard{max-width:280px;margin:0 auto}
+  }
+
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0A1620; --surface:#101D28; --fg:#E8EFF4; --muted:#9BB0BD;
+      --primary:#4D9EEA; --primary-dark:#9FCBF5; --accent:#2CC6A6; --accent-dark:#56D8BB;
+      --warn-bg:#2A2212; --warn-border:#4A3A17; --warn-fg:#E9C877;
+      --border:#1E2E3A; color-scheme: dark;
+    }
+    :root:not([data-theme="light"]) .topcta{color:#06182A}
+    :root:not([data-theme="light"]) .btn-primary{color:#06182A}
+    :root:not([data-theme="light"]) .closing .btn-primary{color:var(--primary-dark);background:#152638}
+  }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <span class="mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1.5 5.5 4 2-2.5 3.5-4 5.5-4 3.5 0 6 3.5 4 7.5C19 16.65 12 21 12 21Z" fill="#fff"/></svg></span>
+      UniMed Travel
+    </div>
+    <a class="topcta" href="#" id="topcta">Telegramga o'tish</a>
+  </div>
+</div>
+
+<div class="hero wrap">
+  <div class="herogrid">
+    <div>
+      <span class="eyebrow">4-noyabr · Bepul jonli efir</span>
+      <h1>Bosh miya o'smasini operatsiyasiz davolash — ZAP-X texnologiyasi bilan</h1>
+      <p class="sub">3 sm gacha bo'lgan bosh miya o'smalarini operatsiyasiz davolash imkoniyati bormi? 4-noyabr kuni Apollo Hospitals neyrojarrohi Dr. Gaurav Tyagi bilan bepul jonli onlayn muloqot.</p>
+      <div class="ctarow">
+        <a class="btn-primary" href="#" id="herocta">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21.5 4.5 2.5 12l6 2.2m13-9.7-3 16-7-5m10-11-10 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Telegram kanalga qo'shilish
+        </a>
+        <span class="trustline">Qatnashish va savol berish — bepul</span>
+      </div>
+      <div class="special">
+        <span class="tag">Maxsus imkoniyat</span>
+        <p>5 nafar bemor uchun individual konsultatsiya: yuborilgan tibbiy hujjatlar ko'rib chiqiladi va tanlangan bemorlar jonli efirda Dr. Gaurav Tyagi bilan o'z holatini muhokama qiladi.</p>
+      </div>
+    </div>
+    <div class="doctorcard">
+      <img src="assets/dr-gaurav.webp" alt="Dr. Gaurav Tyagi">
+      <div class="name">Dr. Gaurav Tyagi</div>
+      <div class="role">Neyrojarroh · ZAP-X mutaxassisi · Apollo Hospitals, Hindiston</div>
+      <div class="eventline">4-noyabr · UniMed Travel Telegram kanalida</div>
+    </div>
+  </div>
+</div>
+
+<div class="docs">
+  <div class="wrap">
+    <section style="padding-block:46px">
+      <div class="section-head">
+        <span class="kicker">Individual konsultatsiya uchun</span>
+        <h2>Qanday hujjatlar kerak</h2>
+      </div>
+      <div class="doclist">
+        <div class="docitem"><div><h3>MRT (MRI) xulosasi</h3><p>Bosh miya tekshiruvi natijalari.</p></div></div>
+        <div class="docitem"><div><h3>MRT tasvirlari</h3><p>Imkon qadar DICOM formatida yoki disk/fayl ko'rinishida. Kontrast bilan o'tkazilgan bo'lsa, shuni ham qo'shing.</p></div></div>
+        <div class="docitem"><div><h3>KT (CT) xulosasi va tasvirlari</h3><p>Agar o'tkazilgan bo'lsa.</p></div></div>
+        <div class="docitem"><div><h3>Gistologiya yoki biopsiya xulosasi</h3><p>Agar o'sma turi aniqlangan bo'lsa.</p></div></div>
+        <div class="docitem"><div><h3>Oldingi operatsiya bayonnomasi va epikriz</h3><p>Agar avval operatsiya qilingan bo'lsa.</p></div></div>
+        <div class="docitem"><div><h3>Radioterapiya yoki boshqa davolash ma'lumotlari</h3><p>Agar avval davolanish o'tkazilgan bo'lsa.</p></div></div>
+        <div class="docitem"><div><h3>Bemor haqida qisqacha ma'lumot</h3><p>Ism-familiya, yosh, tashxis (ma'lum bo'lsa), hozirgi shikoyatlar, avvalgi davolash usullari.</p></div></div>
+      </div>
+      <p class="docnote">⚠️ Faqat shaxsiy tibbiy ma'lumotlarni ommada muhokama qilishga rozilik bildirgan bemorlar hujjatlarini <a href="https://t.me/unimed_travel" id="doclink">@unimed_travel</a> ga yuborsin.</p>
+    </section>
+  </div>
+</div>
+
+<div class="wrap">
+  <section style="padding-top:0">
+    <div class="closing">
+      <span class="eyebrow">4-noyabr · Apollo Hospitals</span>
+      <h2>ZAP-X texnologiyasi haqida to'g'ridan-to'g'ri so'rang</h2>
+      <p>Operatsiyasiz davolash imkoniyatini bilmoqchimisiz? UniMed Travel Telegram kanalida Dr. Gaurav Tyagi bilan bepul jonli onlayn muloqotga qo'shiling.</p>
+      <a class="btn-primary" href="#" id="closingcta">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21.5 4.5 2.5 12l6 2.2m13-9.7-3 16-7-5m10-11-10 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Telegram kanalga qo'shilish
+      </a>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>UniMed Travel — Medical Tourism &amp; Consulting Group</span>
+    <span>@unimed_travel</span>
+  </div>
+</footer>
+
+<script>
+  var TG_LINK = "https://t.me/unimedtravel";
+  function goToTelegram(e){
+    e.preventDefault();
+    if (typeof fbq === "function") { fbq('track', 'Lead'); }
+    window.location.href = TG_LINK;
+  }
+  ["topcta","herocta","closingcta"].forEach(function(id){
+    var el = document.getElementById(id);
+    if (el) el.addEventListener("click", goToTelegram);
+  });
+</script>
+</body>
+</html>
